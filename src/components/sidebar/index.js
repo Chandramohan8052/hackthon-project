@@ -10,7 +10,7 @@ export default function Sidebar() {
   return (
     <div className='sidebar-container'>
       <img src='https://images.unsplash.com/photo-1606663889134-b1dedb5ed8b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' className="profile-img" alt="profile" />
-      <div>
+      <div className='button'>
         <SidebarButton title="Feed" to="/feed" icon={<MdSpaceDashboard />}/>
         <SidebarButton title="Trending" to="/trending" icon={<FaGripfire />} />
         <SidebarButton title="Player" to="/player" icon={<FaPlay />}/>
