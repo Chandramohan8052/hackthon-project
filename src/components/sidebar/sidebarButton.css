@@ -1,5 +1,5 @@
-a{
-    text-decoration: none;
+a {
+    text-decoration: none !important;
 }
 
 .btn-body{
@@ -8,14 +8,26 @@ a{
     border-radius: 20px;
     color: #F8D9C0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: 5px auto;
+    transition: all 0.2s ease;
+    background-color: rgba(244, 187, 146,0.0);
+}
+
+.btn-body.active{
+    background-color: rgba(244, 187, 146,1);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-body:hover{
+    color: #fff;
 }
 
 .btn-title{
-    margin: 4px;
+    margin: 4px auto;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
